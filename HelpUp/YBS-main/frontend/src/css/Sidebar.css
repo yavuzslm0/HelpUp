@@ -1,0 +1,99 @@
+/* src/css/Sidebar.css */
+
+.sidebar-container {
+  width: 230px;
+  min-height: 100vh;
+  background: linear-gradient(
+    160deg,
+    rgb(22, 32, 61) 0%,
+    rgb(36, 39, 82) 60%,
+    rgb(68, 57, 112) 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box; /* 🔹 Önemli: Padding'in genişliği etkilememesi için */
+}
+
+/* Logo Alanı */
+.sidebar-logo-section {
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #7b8ce3 0%, #a37de6 100%);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(123, 140, 227, 0.4);
+  flex-shrink: 0; /* 🔹 Küçülmesini engeller */
+}
+
+.sidebar-logo-text-group {
+  line-height: 1.2;
+}
+
+.sidebar-logo-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.sidebar-logo-subtitle {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Navigasyon Alanı */
+.sidebar-nav {
+  flex-grow: 1; /* Footer'ı aşağı iter */
+}
+
+.sidebar-button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s; /* 🔹 Efekt için */
+}
+
+/* 🔹 JS onMouseOver yerine :hover kullanıyoruz */
+.sidebar-button:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #fff;
+}
+
+/* 🔹 Aktif butonun stilleri */
+.sidebar-button.active {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Footer Alanı */
+.sidebar-footer {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 12px;
+}

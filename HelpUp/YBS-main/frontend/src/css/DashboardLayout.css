@@ -1,0 +1,18 @@
+/* src/css/DashboardLayout.css */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard-main-content {
+  flex-grow: 1; /* Sidebar'dan kalan tüm alanı kapla */
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f6fa; /* Sayfaların genel arka plan rengi */
+}
+
+.dashboard-page-content {
+  flex-grow: 1;
+  padding: 24px;
+}

@@ -1,0 +1,73 @@
+/* src/css/TicketsTable.css */
+/* TicketsTable.jsx ve Dashboard.jsx'ten çevrildi */
+
+.table-container {
+  background-color: white;
+  border: 1px solid #e1e6ef;
+  border-radius: 14px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table-title-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2b3a55;
+  background-color: #f9fafe;
+}
+
+.table-scroll-wrapper {
+  overflow-x: auto; /* Mobilde tablo taşarsa kaydır */
+}
+
+.tickets-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.table-head {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-weight: 600;
+  text-align: left;
+}
+
+.table-head th {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.table-row {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+.table-row:nth-child(even) {
+  background-color: #f9fafb;
+}
+.table-row:nth-child(odd) {
+  background-color: #ffffff;
+}
+.table-row:hover {
+  background-color: #eef3ff; /* hover:bg-slate-50 */
+}
+
+.table-cell {
+  padding: 12px 20px;
+}
+
+.table-cell-id {
+  padding: 12px 20px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.table-cell-muted {
+  padding: 12px 20px;
+  color: #6b7280;
+}

@@ -1,0 +1,72 @@
+/* src/css/Navbar.css */
+
+.navbar-container {
+  height: 64px; /* Tailwind h-16 */
+  background-color: #ffffff; /* Tailwind bg-white */
+  border-bottom: 1px solid #e5e7eb; /* Tailwind border-b border-slate-200 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px; /* Tailwind px-4 md:px-6 */
+  box-sizing: border-box;
+}
+
+.navbar-title {
+  font-size: 18px; /* Tailwind text-sm (değiştirdim) */
+  font-weight: 600; /* Tailwind font-semibold */
+  color: #1a1a1a; /* Tailwind text-slate-800 */
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Tailwind gap-3 */
+}
+
+.navbar-user-info {
+  text-align: right;
+  /* Tailwind hidden sm:block - Şimdilik hep görünsün */
+}
+
+.navbar-user-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.navbar-user-role {
+  font-size: 11px;
+  color: #6b7280; /* Tailwind text-slate-500 */
+  line-height: 1.2;
+}
+
+.navbar-user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px; /* Tailwind rounded-md */
+  background-color: #e2e8f0; /* Tailwind bg-slate-200 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155; /* Tailwind text-slate-700 */
+}
+
+.navbar-logout-button {
+  font-size: 13px;
+  border: 1px solid #cbd5e1;
+  background: linear-gradient(135deg, #7b8ce3 0%, #a37de6 100%);
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.navbar-logout-button:hover {
+  background: linear-gradient(135deg, #a37de6 0%, #7b8ce3 100%);
+  border-color: #7b8ce3;
+}
